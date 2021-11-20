@@ -142,9 +142,12 @@
                     <v-stepper-content step="3">
                       <v-row>
                         <v-col>
-                          When you save your Cardano address, you'll be asked to sign it with your BSC wallet.
-                          We require your wallet's signature to ensure that the owner of the connected BSC wallet is the person who entered this Cardano address.
-                          Creating a signature does not cost any gas and does not spend any tokens.
+                          When you save your Cardano address, you'll be asked to sign it with your BSC wallet. We require your wallet's signature to ensure that the owner of the connected BSC wallet is the person who entered this Cardano address. Creating a signature does not cost any gas and does not spend any tokens. 
+                        </v-col>
+                      </v-row>
+                      <v-row>
+                        <v-col>
+                          PLEASE CHECK YOUR CARDANO ADDRESS IS VALID AND MATCHES THE ONE YOU SEE AS RECEIVING ADDRESS IN YOUR CARDANO WALLET (It begins with "addr")
                         </v-col>
                       </v-row>
                       <v-row>
