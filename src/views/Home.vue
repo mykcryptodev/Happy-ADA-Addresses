@@ -16,8 +16,25 @@
             </v-card-title>
             <v-card-text>
               <v-row>
-                <v-col class="d-flex justify-center">
-                  Happy Coin is evolving into a new project on the Cardano Network. Follow us on the journey to become a charitable crypto project devoted to mental health!
+                <v-col class="d-flex justify-center ml-5 mr-5">
+                  <v-list dense>
+                    <v-subheader>THE BRIDGE WILL STAY OPEN UNTIL NOV 24th, 8PM UTC</v-subheader>
+                    <v-list-item>
+                      <v-list-item-content>By using this bridge, you will send all your remaining HAPPY in and receive ADA in your Cardano wallet address that you have to specify in step 3.</v-list-item-content>
+                    </v-list-item>
+                    <v-list-item>
+                      <v-list-item-content>You will receive ADA in return AFTER the bridge closes.</v-list-item-content>
+                    </v-list-item>
+                    <v-list-item>
+                      <v-list-item-content>You will receive 1:1 the amount of $ value in ADA that your HAPPY is worth by the time the bridge closes.</v-list-item-content>
+                    </v-list-item>
+                    <v-list-item>
+                      <v-list-item-content>Instead of paying a 10% swap tax through PanCakeSwap, only around 1% will be deducted from the total amount. We have to pay this fee to the cross-chain bridge service.</v-list-item-content>
+                    </v-list-item>
+                    <v-list-item>
+                      <v-list-item-content>Metamask Desktop &amp; Mobile support only</v-list-item-content>
+                    </v-list-item>
+                  </v-list>
                 </v-col>
               </v-row>
               <v-row key="stepper">
