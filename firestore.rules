@@ -1,0 +1,26 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAdmin() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.keys().hasAll(["isAdmin"]);
+    }
+    // allow admins to read wallet pair collection groups
+    match /{path=**}/wallet-pairs/{pair} {
+      allow read: if request.auth != null && isAdmin();
+    }
+    // Make sure the uid of the requesting user matches name of the user
+    // document. Do not let users set isAdmin
+    function valid_create() {
+      return !(request.resource.data.keys().hasAll(["isAdmin"]));
+    }
+    function valid_update() {
+      return request.resource.data.isAdmin == resource.data.isAdmin || (valid_create()
+      && !(resource.data.keys().hasAll(["isAdmin"])))
+    }
+    match /users/{userId}/{document=**} {
+      allow read: if request.auth != null && request.auth.uid == userId;
+      allow create: if request.auth != null && valid_create();
+      allow update: if request.auth != null && request.auth.uid == userId && valid_update();
+    }
+  }
+}
