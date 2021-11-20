@@ -54,7 +54,7 @@
                     <v-stepper-content step="1">
                       <v-row class="d-flex justify-space-between align-center">
                         <v-col class="d-flex justify-start">
-                          <v-card href="https://yoroi-wallet.com/#/">
+                          <v-card href="https://emurgo.io/blog/yoroi-wallet-tutorial-how-to-add-to-chrome-browser">
                             <v-img
                               src="@/assets/yoroi.jpeg"
                               class="white--text align-end"
