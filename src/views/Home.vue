@@ -81,20 +81,6 @@
                             </v-img>
                           </v-card>
                         </v-col>
-                        <v-col class="d-flex justify-start">
-                          <v-card href="https://daedaluswallet.io/">
-                            <v-img
-                              src="@/assets/daedalus.jpg"
-                              class="white--text align-end"
-                              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                              height="128px"
-                            >
-                              <v-card-title class="pb-2 d-flex justify-center">
-                                Daedalus
-                              </v-card-title>
-                            </v-img>
-                          </v-card>
-                        </v-col>
                       </v-row>
                       <v-row>
                         <v-col class="d-flex align-middle mb-2">
