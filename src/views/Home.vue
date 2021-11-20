@@ -240,8 +240,8 @@
                   </v-col>
                 </v-row>
                 <v-row>
-                  <v-col>
-                    Stay tuned for updates about the ADA stake pool!
+                  <v-col class="text-center">
+                    You will receive your ADA after the bridge closes
                   </v-col>
                 </v-row>
               </v-card-text>
