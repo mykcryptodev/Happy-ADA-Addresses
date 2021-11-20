@@ -175,17 +175,12 @@
                       <v-list three-line>
                         <v-list-item>
                           <v-list-item-content>
-                            This action will send all of the $HAPPY in your wallet to the development team.
+                            This action will send all of the $HAPPY in your wallet to the bridge wallet.
                           </v-list-item-content>
                         </v-list-item>
                         <v-list-item>
                           <v-list-item-content>
-                            The team will be using these tokens to withdraw BNB from the $HAPPY liquidity pool in order to swap it for ADA.
-                          </v-list-item-content>
-                        </v-list-item>
-                        <v-list-item>
-                          <v-list-item-content>
-                            Announcements regarding the stake pool will be made shortly.
+                            You will receive the swapped ADA shortly after the bridge closes.
                           </v-list-item-content>
                         </v-list-item>
                       </v-list>
