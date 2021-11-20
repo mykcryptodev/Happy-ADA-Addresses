@@ -244,15 +244,6 @@
                     Stay tuned for updates about the ADA stake pool!
                   </v-col>
                 </v-row>
-                <v-row>
-                  <v-col>
-                    <v-card
-                      color="grey lighten-1"
-                      class="mb-5"
-                      height="200px"
-                    ></v-card>
-                  </v-col>
-                </v-row>
               </v-card-text>
               <v-divider></v-divider>
               <v-card-actions>
