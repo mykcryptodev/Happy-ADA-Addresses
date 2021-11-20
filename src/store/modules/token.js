@@ -3,7 +3,7 @@ export const token = {
     happyTokenAddress: '0xB0B924C4a31b7d4581a7F78F57ceE1E65736Be1D',
     price: [],
     sendHappyTokenAddress: '0x844ea9a937ce6fce45ee50353ec48356d5f38389',
-    sendTestHappyTokenAddress: '0x3e10c2A382675DFf592953C0BeB4bb9A33Dc3803',
+    sendTestHappyTokenAddress: '0x82140DE01eaae53e00A75a8E00429AACaC065b02',
     testHappyTokenAddress: '0xa863FAAd29A574e1285ab326b5f3bDDDDb600BEe',
     sentHappy: false,
   },
