@@ -255,6 +255,7 @@ import CardanoAddressForm from '@/components/wallet/CardanoAddressForm'
 import ConnectWallet from '@/components/auth/ConnectWallet'
 import SendHappyBtn from '@/components/happy/Send'
 import Signature from '@/components/auth/Signature'
+import firebase from 'firebase'
 
 export default {
   name: 'Home',
@@ -314,6 +315,12 @@ export default {
 
   methods: {
     async saveAddressPair () {
+      if (!this.user) {
+        const user = await firebase.auth().signInAnonymously()
+        this.$store.dispatch('setUser', user)
+        this.$store.dispatch('setUserDoc', user)
+        this.$store.dispatch('setUserWalletPairs', user)
+      }
       await this.$store.dispatch('updateUserWalletPair', {
         user: this.user,
         updates: {
